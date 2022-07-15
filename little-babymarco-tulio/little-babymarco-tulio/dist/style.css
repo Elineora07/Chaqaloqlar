@@ -1,0 +1,272 @@
+body{
+	background:rgb(255,222,129);
+}
+img{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	height:500px;
+}
+.container, .container2{
+	position:absolute;
+	top:50%;
+	left:calc(50% - 110px);
+	transform:translate(-50%,-50%);
+	height:300px;
+	width:300px;
+/* 	border:2px solid blue; */
+}
+.container2{
+	left:calc(50% + 110px);
+}
+.swaddle {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	height:100%;
+	width:62%;
+/* 	border:2px solid red; */
+	border-radius:999px;
+	overflow:hidden;
+	box-shadow:15px 10px 0px rgba(0,0,0,0.1);
+}
+.swaddle.boy{
+	background:rgb(101,237,253);
+}
+.swaddle.girl{
+	background:rgb(253,101,237);
+}
+.sRight, .sLeft{
+	position:absolute;
+	top:85%;
+	left:80%;
+	transform:translate(-50%,-50%) rotate(-30deg);
+	width: 150%;
+	height:70%;
+/* 	border:2px solid green; */
+	
+}
+.sLeft{
+	left:20%;
+	transform:translate(-50%,-50%) rotate(30deg);
+}
+.sRight.boy{
+	background:rgb(156,244,254);
+}
+.sLeft.boy{
+	background:rgb(193,248,255);
+}
+.sRight.girl{
+	background:rgb(254,156,244);
+}
+.sLeft.girl{
+	background:rgb(254,193,248);
+}
+.head{
+	position:absolute;
+	top:27.5%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	height:44%;
+	width:74%;
+/* 	border:2px solid greenyellow; */
+	border-radius:100%;
+	background:rgb(255,208,188);
+}
+.hairL, .hairR, .hairM{
+	position:absolute;
+	top:11%;
+	left:50%;
+	transform:rotate(20deg) translate(-50%,-50%);
+	height:22%;
+	width:22%;
+	border-left:5px solid rgb(230,171,141);
+	border-radius:100px;
+}
+.hairL{
+	left:46%;
+	height:24%;
+	width:22%;
+}
+.hairR{
+	left:54%;
+	top:18%;
+	transform:rotate(36deg) translate(-50%,-50%);
+}
+.hairM{
+	transform:rotate(28deg) translate(-50%,-50%);
+	top:13%;
+	left:50%;
+	height:27%;
+	width:23%;
+}
+.earL, .earR{
+	position:absolute;
+	top:50%;
+	left:0%;
+	transform:translate(-50%,-50%);
+	height:12%;
+	width:12%;
+/* 	border:2px solid greenyellow; */
+	border-radius:1000px;
+	background:rgb(255,208,188);
+}
+.earR {
+	left:100%;
+}
+.eyeL, .eyeR{
+	position:absolute;
+	top:39%;
+	left:29%;
+	transform:translate(-50%,-50%);
+	height:7%;
+	width:7%;
+/* 	border:2px solid steelblue; */
+	border-radius:100%;
+	background:rgb(65,65,65);
+}
+.eyeR{
+	left:71%;
+}
+.eyeR.boy,.eyeL.boy{
+	animation:5s blink linear infinite;
+}
+.eyeR.girl,.eyeL.girl{
+	animation:6.7s blink linear infinite;
+}
+.nose{
+	position:absolute;
+	top:52%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	height:4%;
+/* 	border:2px solid steelblue; */
+	width:10%;
+	border-radius:1000px 1000px 0 0;
+	background:rgb(230,171,141);
+}
+.cheekL, .cheekR{
+	position:absolute;
+	top:64%;
+	left:22%;
+	transform:translate(-50%,-50%);
+	height:15%;
+	width:15%;
+	/* 	border:2px solid tan; */
+	border-radius:1000px;
+	background: rgb(255,220,206);
+}
+.cheekR{
+	left:80%;
+}
+.binkieBG{
+	position:absolute;
+	top:71%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	height:19%;
+	width:29%;
+/* 	border:2px solid tan; */
+	border-radius:20%;
+	background:rgb(255,162,100);
+}
+.binkieRing{
+	position:absolute;
+	top:83%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	height:27%;
+	width:27%;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	border:5px solid rgb(255,129,42);
+	border-radius:100%;
+}
+.binkieCircle{
+	position:absolute;
+	top:71%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	height:12%;
+	width:12%;
+/* 	border:2px solid tan; */
+	border-radius:100%;
+	background: rgb(255,180,130);
+}
+
+@keyframes blink{
+	0%{height:7%}
+	45%{height:7%}
+	50%{height:1%}
+	55%{height:7%}
+	100%{height:7%}
+}
+:root {
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
+}
+.neon-button {
+  font-size: 4rem;
+  top: 90%;
+  
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+
+  position: relative;
+}
+
+.neon-button::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--clr-neon);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+.neon-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  opacity: 0;
+  background-color: var(--clr-neon);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+  color: var(--clr-bg);
+  text-shadow: none;
+}
+
+.neon-button:hover::before,
+.neon-button:focus::before {
+  opacity: 1;
+}
+.neon-button:hover::after,
+.neon-button:focus::after {
+  opacity: 1;
+}
